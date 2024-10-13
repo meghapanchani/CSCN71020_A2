@@ -71,7 +71,7 @@ int getIntInput(char message[]) {
 }
 
 void setLength(int input, int *length) {
-	if (input >= 0 && input < 100) {
+	if (input > 0 && input < 100) {
 		*length = input;
 	}
 }
@@ -83,7 +83,7 @@ void setWidth(int input, int *width) {
 }
 
 int getPerimeter(int *length, int *width) {
-	int perimeter = *length + *length + *width;
+	int perimeter = *length + *length + *width + *width;
 	return perimeter;
 }
 
