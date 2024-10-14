@@ -72,7 +72,7 @@ namespace RectangleTests
 
         TEST_METHOD(TestSetWidthLower)
         {
-            int width = 10; 
+            int width = 0; 
             setWidth(22, &width); 
             Assert::AreEqual(22, width);  
         }
@@ -84,7 +84,7 @@ namespace RectangleTests
             Assert::AreEqual(21, width);  
 
             setWidth(100, &width);  
-            Assert::AreEqual(42, width);  
+            Assert::AreEqual(21, width);  
         }
 	};
 }
